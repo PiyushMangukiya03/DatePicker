@@ -17,7 +17,9 @@
 
 
 
-https://user-images.githubusercontent.com/75199100/124210484-206af080-db09-11eb-852b-17520ab8495c.mp4 ![device-2021-07-02-091552](https://user-images.githubusercontent.com/75199100/124217614-40ed7780-db16-11eb-99bc-7a8e661ead33.png)
+https://user-images.githubusercontent.com/75199100/124210484-206af080-db09-11eb-852b-17520ab8495c.mp4 
+
+![device-2021-07-02-091552](https://user-images.githubusercontent.com/75199100/124217614-40ed7780-db16-11eb-99bc-7a8e661ead33.png)
 ![device-2021-07-02-091606](https://user-images.githubusercontent.com/75199100/124217619-42b73b00-db16-11eb-927b-80a27b181507.png)
 
 
