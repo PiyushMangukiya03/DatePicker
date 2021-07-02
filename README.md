@@ -58,6 +58,8 @@ https://user-images.githubusercontent.com/75199100/124210484-206af080-db09-11eb-
 	    dateTimePickerView.show();
  
 <h3> Customize Useage：</h3>
+
+<h4> Java </h4>
 	
  	Calendar selectedDate = Calendar.getInstance();
         Calendar startDate = Calendar.getInstance();
@@ -87,3 +89,33 @@ https://user-images.githubusercontent.com/75199100/124210484-206af080-db09-11eb-
                 .setRangDate(startDate,endDate)
                 .setLabel("day","month","year","hours","mins","seconds")
                 .build();
+		
+<h4> Kotlin </h4>
+
+	val dateTimePickerView =
+            DateTimePickerView.Builder(this) { date: Date, v: View? ->  //Callback
+		//get selected date
+            }.setType(
+                booleanArrayOf(
+                    true,
+                    true,
+                    true,
+                    false,
+                    false,
+                    false
+                )
+            ) // day-month-year-hour-min-sec
+                .setCancelText(getString(R.string.cancel))
+                .setSubmitText(getString(R.string.done))
+                .setContentSize(contentsize)
+                .setTitleSize(contentsize)
+                .setOutSideCancelable(false) // default is true
+                .isCyclic(true) // default is false
+                .setTitleColor(Color.BLACK)
+                .setSubmitColor(Color.BLACK)
+                .setCancelColor(Color.BLACK)
+                .setBgColor(Color.WHITE)
+                .setTitleBgColor(Color.LTGRAY)
+                .setTextColorCenter(Color.BLACK)
+                .build()
+        dateTimePickerView.show()
