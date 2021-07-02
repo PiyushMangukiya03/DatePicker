@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.Date;
 
@@ -24,7 +25,9 @@ public class MainActivity extends AppCompatActivity {
         btnDatePicker = findViewById(R.id.btnDatePicker);
 
         btnDatePicker.setOnClickListener(v -> {
-            dateTimePickerView = new DateTimePickerView.Builder(this, (date, v1) -> {//选中事件回调
+            dateTimePickerView = new DateTimePickerView.Builder(this, (date, v1) -> {
+
+                Toast.makeText(this, date.toString(), Toast.LENGTH_SHORT).show();
 
             }).setType(new boolean[]{true, true, true, false, false, false})
                     .setCancelText("Cancel")
@@ -33,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                     .isCenterLabel(false)
                     .setDividerColor(Color.DKGRAY)
                     .setContentSize(21)
-                    .setDecorView(null)
                     .isCyclic(true)
                     .build();
 
